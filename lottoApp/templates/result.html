@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RESULT</title>
+    </head>
+    <body>
+        <h2> 로또 추첨 결과는 </h2>
+        {{answer}}
+        <br>
+        <hr>
+        <h2>맞춘 개수</h2>
+        {{count}}개
+        {% if count == 6 %}
+            <p>축하합니다! 1등당첨</p>
+        {% elif count == 5 %}
+             <p>축하합니다! 2등당첨</p>
+        {% else %}
+            <p>꽝! 다음기회에 </p>
+        {% endif %}
+        <h2> 입력한 번호  </h2>
+        {{full}}
+        
+        <h2> 맞춘번호  </h2>
+        {{correct}}
+        
+
+    </body>
+</html>
